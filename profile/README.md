@@ -1,6 +1,8 @@
 <div align="center">
 
-# FENRYX
+<img src="https://raw.githubusercontent.com/fenryx-tech/.github/main/profile/assets/github-banner.png" alt="Fenryx Banner" width="100%"/>
+
+---
 
 **Software Engineering × Offensive Security**
 
@@ -48,9 +50,9 @@
 
 ## 🔧 技術棧
 
-**Frontend**: Next.js, Astro, React, TypeScript
-**Backend**: Node.js, Python, Go
-**Infrastructure**: Cloudflare, AWS, GCP, Docker, Kubernetes
+**Frontend**: Next.js, Astro, React, TypeScript  
+**Backend**: Node.js, Python, Go  
+**Infrastructure**: Cloudflare, AWS, GCP, Docker, Kubernetes  
 **Security**: Burp Suite, Metasploit, OWASP ZAP, Custom Tools
 
 ## 📚 開源專案
