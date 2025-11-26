@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320">
+  <!-- Background -->
+  <rect width="1280" height="320" fill="#121212"/>
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2A2A2A" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient for accent -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D72638;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D72638;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#grid)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="4" fill="#D72638"/>
+
+  <!-- Large logo watermark (background) -->
+  <g transform="translate(950, 100) scale(4)" opacity="0.04">
+    <path d="M24 4L16 12L8 8L12 20L4 28L16 32L20 44L24 36L28 44L32 32L44 28L36 20L40 8L32 12L24 4Z" fill="#D72638"/>
+    <path d="M24 16L20 24L24 28L28 24L24 16Z" fill="#050505"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="320" fill="url(#accentGradient)"/>
+
+  <!-- Content area -->
+  <g transform="translate(80, 0)">
+    <!-- Logo -->
+    <g transform="translate(0, 100) scale(2.5)">
+      <path d="M24 4L16 12L8 8L12 20L4 28L16 32L20 44L24 36L28 44L32 32L44 28L36 20L40 8L32 12L24 4Z" fill="#D72638" filter="url(#glow)"/>
+      <path d="M24 16L20 24L24 28L28 24L24 16Z" fill="#121212"/>
+    </g>
+
+    <!-- Brand name -->
+    <text x="140" y="145" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="72" font-weight="900" fill="#FFFFFF" letter-spacing="8">FENRYX</text>
+
+    <!-- Tagline -->
+    <text x="140" y="195" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="28" font-weight="400" fill="#A7A7A7" letter-spacing="2">
+      Software Engineering × Offensive Security
+    </text>
+
+    <!-- Decorative line -->
+    <rect x="140" y="220" width="600" height="2" fill="#D72638" opacity="0.5"/>
+  </g>
+
+  <!-- Bottom right info -->
+  <g transform="translate(1100, 280)">
+    <text x="0" y="0" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="16" font-weight="500" fill="#A7A7A7" text-anchor="end">
+      fenryx.tech
+    </text>
+  </g>
+
+  <!-- Geometric accent elements -->
+  <circle cx="1200" cy="160" r="80" fill="#D72638" opacity="0.05"/>
+  <circle cx="1230" cy="200" r="50" fill="#D72638" opacity="0.03"/>
+</svg>
